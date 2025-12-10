@@ -1,5 +1,5 @@
 # Stage 1: build the Go project
-FROM golang:1.24 AS build
+FROM golang:1.25 AS build
 
 WORKDIR /app
 
@@ -16,12 +16,12 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -o cloudflare-audit-log-scraper .
 
 # Stage 2: create the final image
-FROM alpine:latest
+FROM gcr.io/distroless/static-debian13
 
-WORKDIR /app
+WORKDIR /
 
 # Copy the binary from the build stage
 COPY --from=build /app/cloudflare-audit-log-scraper .
 
 # Run the binary
-CMD ["./cloudflare-audit-log-scraper"]
+CMD ["/cloudflare-audit-log-scraper"]
