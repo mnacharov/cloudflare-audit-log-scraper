@@ -1,0 +1,60 @@
+{
+  "errors": [],
+  "result": [
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Create DNS Record",
+        "result": "success",
+        "time": "2025-12-09T13:41:21.805Z",
+        "type": "create"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "875b986d79fe3e20383326992a85324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "9ad4b3b932bd-5f0d-7c15-867e-019b0358",
+      "raw": {
+        "cf_ray_id": "9a4eb6b3bc661ae9",
+        "method": "POST",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "request": {
+          "name": "test.example.com",
+          "tags": [],
+          "type": "TXT",
+          "comment": "",
+          "content": "\"delete it\"",
+          "proxied": false
+        },
+        "response": {
+          "id": "02934b3fc24e0ff489c37750b9f9b9b6",
+          "name": "test.example.com",
+          "tags": [],
+          "type": "TXT",
+          "content": "\"delete it\"",
+          "proxied": false
+        },
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    }
+  ],
+  "result_info": {
+    "count": 1
+  },
+  "success": true
+}

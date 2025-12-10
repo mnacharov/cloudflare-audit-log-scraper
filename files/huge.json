@@ -1,0 +1,3600 @@
+{
+  "errors": [],
+  "result": [
+      {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Delete DNS Record",
+        "result": "success",
+        "time": "2025-12-10T10:10:19.996Z",
+        "type": "delete"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-86ea-78c1-818b-f8913742a6d6",
+      "raw": {
+        "cf_ray_id": "9abbf3aafebbd082",
+        "method": "DELETE",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records/02934b3f3c24e0ff489c7750b9f9b9b6",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "02934b3f3c24e0ff489c7750b9f9b9b6",
+        "product": "dns_records",
+        "response": {
+          "id": "02934b3f3c24e0ff489c7750b9f9b9b6"
+        },
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Show DNS Settings",
+        "result": "success",
+        "time": "2025-12-10T10:10:17.221Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-7c17-7ab5-bd13-7ede946f451c",
+      "raw": {
+        "cf_ray_id": "9abbf399ab28d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:14.641Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-71f1-7fe8-a58d-d2254f4959a6",
+      "raw": {
+        "cf_ray_id": "9abbf3892a4fd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=50\u0026order=content\u0026direction=asc\u0026search=test",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-10T10:10:14.592Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-71ce-7a3c-84b8-771b1b99775a",
+      "raw": {
+        "cf_ray_id": "9abbf3893a58d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,example.com,app-admin.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:14.144Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-700c-7c46-a6c6-8d86b672a41f",
+      "raw": {
+        "cf_ray_id": "9abbf3866c92d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=3500\u0026search=test\u0026order=content\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-10T10:10:13.094Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-6bf3-7bcd-85a2-2877aba9bf15",
+      "raw": {
+        "cf_ray_id": "9abbf37fdfbfd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,example.com,app-admin.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-10T10:10:11.844Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-670d-7e9c-bc80-bb86073d633d",
+      "raw": {
+        "cf_ray_id": "9abbf37808add082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,www.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:11.751Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-66a7-7d5d-b25a-cd8ba9d977ca",
+      "raw": {
+        "cf_ray_id": "9abbf3776f48d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=3500\u0026order=content\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:11.741Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-669d-7a09-8450-f7398a3df3bf",
+      "raw": {
+        "cf_ray_id": "9abbf3775f20d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=50\u0026order=content\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-10T10:10:11.073Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-6401-716e-9536-ac2e3b2d7694",
+      "raw": {
+        "cf_ray_id": "9abbf3732f51d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,www.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.762Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5f01-7481-ab3c-692bcc839851",
+      "raw": {
+        "cf_ray_id": "9abbf36afdfdd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=3500\u0026order=name\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.789Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5efd-7118-9543-bdd29b9839ef",
+      "raw": {
+        "cf_ray_id": "9abbf36afde4d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Spectrum application configuration",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.777Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ef1-767e-aee2-ef004d91c2a6",
+      "raw": {
+        "cf_ray_id": "9abbf36afdf6d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/spectrum/apps/dns?page=1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "dns",
+        "product": "spectrum",
+        "scope": "zones",
+        "type": "apps"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List Load Balancers",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.777Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ef1-715a-8652-4b9e729ef561",
+      "raw": {
+        "cf_ray_id": "9abbf36afdf2d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/load_balancers",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "load_balancers",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Total TLS Settings Details",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.773Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5eed-700d-9233-af14fc95f5a8",
+      "raw": {
+        "cf_ray_id": "9abbf36afdfbd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/acm/total_tls",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "acm",
+        "scope": "zones",
+        "type": "total_tls"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.756Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ee8-7c72-8df2-73d7a40a9359",
+      "raw": {
+        "cf_ray_id": "9abbf36afdebd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=3500\u0026order=type\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "DNSSEC Details",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.767Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ee7-78a4-b271-48357bee5a23",
+      "raw": {
+        "cf_ray_id": "9abbf36afdecd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dnssec",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dnssec",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.764Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ee4-7c26-a484-e24454944b20",
+      "raw": {
+        "cf_ray_id": "9abbf36aedddd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=50",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Account Custom Nameserver Related Zone Metadata",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.75Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ee1-7a1b-b0f3-e642ee128374",
+      "raw": {
+        "cf_ray_id": "9abbf36aeddad082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/custom_ns",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "custom_ns",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Show DNS Settings",
+        "result": "success",
+        "time": "2025-12-10T10:10:09.758Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5ede-7b05-afdb-6d5fe5941919",
+      "raw": {
+        "cf_ray_id": "9abbf36aedd9d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-10T10:10:06.243Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5123-7afc-b8d2-b244743d749f",
+      "raw": {
+        "cf_ray_id": "9abbf354ff83d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Hold",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.947Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-5004-7e1b-8557-dce6e6e4e99f",
+      "raw": {
+        "cf_ray_id": "9abbf3532b9cd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/hold",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "hold",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Hold",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.167Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4cef-7c93-a365-8c4d623a7aa7",
+      "raw": {
+        "cf_ray_id": "9abbf34e390ed082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/hold",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "hold",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Bot Management Config",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.166Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4cee-7fe3-bf54-0dcc300b9a55",
+      "raw": {
+        "cf_ray_id": "9abbf34e390fd082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/bot_management",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "bot_management",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.044Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4c80-7b51-8e93-77c7a18ca1d2",
+      "raw": {
+        "cf_ray_id": "9abbf34d8f79d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.054Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4c7e-7065-8d2f-36fd9b992c95",
+      "raw": {
+        "cf_ray_id": "9abbf34d8f6ed082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.04Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4c7d-7b76-bb84-c431c8972a53",
+      "raw": {
+        "cf_ray_id": "9abbf34d7f66d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.043Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4c7d-7b26-a40b-c24181eabea0",
+      "raw": {
+        "cf_ray_id": "9abbf34d8f70d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.04Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4c7b-7d3a-898d-b904c9afb5da",
+      "raw": {
+        "cf_ray_id": "9abbf34d7f64d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get RUM status for a zone",
+        "result": "success",
+        "time": "2025-12-10T10:10:05.039Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-4c7b-78f0-af39-f88cb6e5f89d",
+      "raw": {
+        "cf_ray_id": "9abbf34d7f61d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/rum",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "rum"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Subscription Details",
+        "result": "success",
+        "time": "2025-12-10T10:10:04.154Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-48fa-7bc2-af45-6f59af4dcf2f",
+      "raw": {
+        "cf_ray_id": "9abbf347eb50d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/subscription",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "subscription",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Show DNS Settings",
+        "result": "success",
+        "time": "2025-12-10T10:10:04.141Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-48f8-76bd-b7de-fc5553ba5151",
+      "raw": {
+        "cf_ray_id": "9abbf347eb47d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-10T10:10:04.14Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-48f6-7094-a565-9039185fb146",
+      "raw": {
+        "cf_ray_id": "9abbf347eb3ed082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List WAF packages",
+        "result": "success",
+        "time": "2025-12-10T10:10:04.149Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b07bd-48f5-76a3-bdbf-09f284641712",
+      "raw": {
+        "cf_ray_id": "9abbf347db38d082",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/firewall/waf/packages",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "firewall",
+        "scope": "zones",
+        "type": "waf.packages"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-10T00:25:26.968Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "api_token",
+        "email": "user@example.com",
+        "id": "1a8202167f9eb3ce144f9feb3a05ebfc",
+        "ip_address": "1.1.1.1",
+        "token": {
+          "id": "025c9d46a1cee382fe8f36dc4bc0bab2",
+          "name": "Edit zone DNS"
+        },
+        "type": "user"
+      },
+      "id": "019b05a6-0cb8-78c4-b320-800ddff94a83",
+      "raw": {
+        "cf_ray_id": "9ab89ae77fc2a657",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=100\u0026page=1",
+        "user_agent": "python-requests/2.32.4"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-09T16:58:42.769Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-0ce5-7912-96e2-9b4765507a57",
+      "raw": {
+        "cf_ray_id": "9ab60c814924bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:41.556Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-082d-79d7-853c-d8771934913f",
+      "raw": {
+        "cf_ray_id": "9ab60c79bb59bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T16:58:41.58Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-082c-7ef7-b7e6-f569365dadce",
+      "raw": {
+        "cf_ray_id": "9ab60c79bb57bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:41.556Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-0829-7c7d-981e-74566542a0d4",
+      "raw": {
+        "cf_ray_id": "9ab60c79bb58bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get RUM status for a zone",
+        "result": "success",
+        "time": "2025-12-09T16:58:41.548Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-0824-7ba2-abe0-de14bc195cf5",
+      "raw": {
+        "cf_ray_id": "9ab60c79ab52bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/rum",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "rum"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:41.552Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-0820-7e37-9dbb-af829fb0a6c8",
+      "raw": {
+        "cf_ray_id": "9ab60c79bb54bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:41.567Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040d-081f-7a43-89b6-3cec8fa6d16e",
+      "raw": {
+        "cf_ray_id": "9ab60c79bb53bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-09T16:58:14.079Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-9cbf-797d-8f4d-1c1c042e63a0",
+      "raw": {
+        "cf_ray_id": "9ab60bcddd51bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get RUM status for a zone",
+        "result": "success",
+        "time": "2025-12-09T16:58:12.956Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-9892-7342-b8a2-96b402891cb9",
+      "raw": {
+        "cf_ray_id": "9ab60bc6ff86bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/rum",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "rum"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:13.004Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-988c-7d9a-9d39-637d5d7da05a",
+      "raw": {
+        "cf_ray_id": "9ab60bc70f91bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:12.957Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-987f-7428-8cef-976ea0fc4c50",
+      "raw": {
+        "cf_ray_id": "9ab60bc6ff8bbf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Bot Management Config",
+        "result": "success",
+        "time": "2025-12-09T16:58:12.942Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-984e-7f0c-a225-254fb4ec3ca0",
+      "raw": {
+        "cf_ray_id": "9ab60bc6cf31bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/bot_management",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "bot_management",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:12.916Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-9848-7f71-98f6-dbd968a7a140",
+      "raw": {
+        "cf_ray_id": "9ab60bc6bf2cbf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-09T16:58:12.934Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-9846-74cb-9f14-7d5d086e9066",
+      "raw": {
+        "cf_ray_id": "9ab60bc6bf27bf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T16:58:12.933Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b040c-9845-7d96-bbf8-4d1adb1cbba7",
+      "raw": {
+        "cf_ray_id": "9ab60bc6af1dbf8a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-09T13:45:43.201Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-5c2c-7d06-99e0-88b7649d0aab",
+      "raw": {
+        "cf_ray_id": "9ab4f1cd08b6027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:45:42.042Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-579a-75b9-a83b-f77a3d4f2fbe",
+      "raw": {
+        "cf_ray_id": "9ab4f1c5a9d4027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-09T13:45:42.027Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-5798-7774-b2e8-c91096edfca1",
+      "raw": {
+        "cf_ray_id": "9ab4f1c5a9cf027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T13:45:42.033Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-5791-71d2-96c5-51f80fc7f031",
+      "raw": {
+        "cf_ray_id": "9ab4f1c599af027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:45:42.009Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-5790-765e-90fc-22b1f6d1fe6b",
+      "raw": {
+        "cf_ray_id": "9ab4f1c59998027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-09T13:45:42.021Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-5785-7cb8-90ad-b9c71293c42e",
+      "raw": {
+        "cf_ray_id": "9ab4f1c58990027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get RUM status for a zone",
+        "result": "success",
+        "time": "2025-12-09T13:45:42.02Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035c-5784-726c-bb6d-f164932dc413",
+      "raw": {
+        "cf_ray_id": "9ab4f1c58985027a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/rum",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "rum"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:55.714Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-a2c9-785b-aec7-207362caaacd",
+      "raw": {
+        "cf_ray_id": "9ab4f0a43c5bb39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:55.733Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-a2b5-7d3c-a401-bbc7dc1d0527",
+      "raw": {
+        "cf_ray_id": "9ab4f0a43c5fb39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T13:44:55.712Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-a2b0-724b-b0a9-56777b713150",
+      "raw": {
+        "cf_ray_id": "9ab4f0a43c55b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:55.726Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-a2ae-72ba-b854-5766fc8097ea",
+      "raw": {
+        "cf_ray_id": "9ab4f0a43c4eb39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:55.712Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-a2ad-76c0-9657-10dc6faa59d5",
+      "raw": {
+        "cf_ray_id": "9ab4f0a43c50b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-09T13:44:50Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8c50-70b7-b3db-385002030221",
+      "raw": {
+        "cf_ray_id": "9ab4f080685ab39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.772Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8784-740b-923a-4600eacae7a8",
+      "raw": {
+        "cf_ray_id": "9ab4f078bd33b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Bot Management Config",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.747Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-877e-790d-bfa5-a7e44408de0e",
+      "raw": {
+        "cf_ray_id": "9ab4f078acefb39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/bot_management",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "bot_management",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.757Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8775-7ce5-b16a-fd695f181beb",
+      "raw": {
+        "cf_ray_id": "9ab4f0789ce8b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Subscription Details",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.744Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8775-76bf-89d3-1ddaa594cdd5",
+      "raw": {
+        "cf_ray_id": "9ab4f078ad06b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/subscription",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "subscription",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.737Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8774-7432-9054-f5bfa831f763",
+      "raw": {
+        "cf_ray_id": "9ab4f0789ce6b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Hold",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.74Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8771-7d15-8fcf-c123be96c772",
+      "raw": {
+        "cf_ray_id": "9ab4f078acf3b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/hold",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "hold",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get RUM status for a zone",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.753Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8771-71b0-8430-6b55ffc21743",
+      "raw": {
+        "cf_ray_id": "9ab4f0789cddb39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/rum",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "rum"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.736Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-876e-7717-823b-9f1ac4dcde35",
+      "raw": {
+        "cf_ray_id": "9ab4f0789ce2b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.749Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-876d-7244-a7e4-d9fe77fc2885",
+      "raw": {
+        "cf_ray_id": "9ab4f0789cecb39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.734Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-875e-7a4d-83df-77584aee7b2b",
+      "raw": {
+        "cf_ray_id": "9ab4f0788ca8b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List WAF packages",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.704Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8758-734f-9849-a977f5fdff06",
+      "raw": {
+        "cf_ray_id": "9ab4f0786c71b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/firewall/waf/packages",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "firewall",
+        "scope": "zones",
+        "type": "waf.packages"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Show DNS Settings",
+        "result": "success",
+        "time": "2025-12-09T13:44:48.721Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b035b-8751-7f6e-9606-9c0c183b943f",
+      "raw": {
+        "cf_ray_id": "9ab4f0786c77b39a",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-09T13:41:23.551Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-65df-7121-88d2-7816b7bfa470",
+      "raw": {
+        "cf_ray_id": "9ab4eb761e941ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,example.com,www.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Create DNS Record",
+        "result": "success",
+        "time": "2025-12-09T13:41:21.805Z",
+        "type": "create"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-5f0d-7c15-867e-9ad4b3b932bd",
+      "raw": {
+        "cf_ray_id": "9ab4eb6b3c661ae9",
+        "method": "POST",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "request": {
+          "name": "test.example.com",
+          "tags": [],
+          "type": "TXT",
+          "comment": "",
+          "content": "\"delete it\"",
+          "proxied": false
+        },
+        "response": {
+          "id": "02934b3f3c24e0ff489c7750b9f9b9b6",
+          "name": "test.example.com",
+          "tags": [],
+          "type": "TXT",
+          "content": "\"delete it\"",
+          "proxied": false
+        },
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Show DNS Settings",
+        "result": "success",
+        "time": "2025-12-09T13:41:02.15Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-1251-7a25-8e61-1a401fe77800",
+      "raw": {
+        "cf_ray_id": "9ab4eaf06f471ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-09T13:41:02.146Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-1242-7778-82f5-df96128c7b3a",
+      "raw": {
+        "cf_ray_id": "9ab4eaf05f0f1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,example.com,www.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-09T13:41:01.551Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0ff8-72cf-a069-8ccf5a356359",
+      "raw": {
+        "cf_ray_id": "9ab4eaecbded1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,www.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Certificate Pack",
+        "result": "success",
+        "time": "2025-12-09T13:41:00.72Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0cb0-74a2-ab47-a0ec92ee81a4",
+      "raw": {
+        "cf_ray_id": "9ab4eae779ee1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/ssl/certificate_packs/hosts?names=*.example.com,www.example.com",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "hosts",
+        "product": "ssl",
+        "scope": "zones",
+        "type": "certificate_packs"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Total TLS Settings Details",
+        "result": "success",
+        "time": "2025-12-09T13:41:00.719Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0caf-7ed2-8d41-c55dbdcb1ce3",
+      "raw": {
+        "cf_ray_id": "9ab4eae769e71ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/acm/total_tls",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "acm",
+        "scope": "zones",
+        "type": "total_tls"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.614Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-085e-736d-a777-5f6280644cb4",
+      "raw": {
+        "cf_ray_id": "9ab4eae079c21ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=3500\u0026order=type\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List Load Balancers",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.592Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-085a-75fb-951e-d78a12f44540",
+      "raw": {
+        "cf_ray_id": "9ab4eae079ab1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/load_balancers",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "load_balancers",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Total TLS Settings Details",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.608Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0858-7a99-bef3-1d7b8a033ff1",
+      "raw": {
+        "cf_ray_id": "9ab4eae079b51ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/acm/total_tls",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "acm",
+        "scope": "zones",
+        "type": "total_tls"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.608Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0858-71c5-b946-6e2108f9e4ec",
+      "raw": {
+        "cf_ray_id": "9ab4eae079bb1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Account Custom Nameserver Related Zone Metadata",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.607Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0857-7681-8537-712411f25811",
+      "raw": {
+        "cf_ray_id": "9ab4eae079b81ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/custom_ns",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "custom_ns",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.595Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0855-7c90-b807-385a9808f58d",
+      "raw": {
+        "cf_ray_id": "9ab4eae079b71ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=3500\u0026order=name\u0026direction=asc",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Spectrum application configuration",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.603Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0853-769c-8bea-5a93182d9f37",
+      "raw": {
+        "cf_ray_id": "9ab4eae079af1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/spectrum/apps/dns?page=1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "dns",
+        "product": "spectrum",
+        "scope": "zones",
+        "type": "apps"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Show DNS Settings",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.591Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-0851-7681-833d-350d9b1e9364",
+      "raw": {
+        "cf_ray_id": "9ab4eae079a51ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "DNSSEC Details",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.598Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-084e-7449-96f9-b1854ee9354f",
+      "raw": {
+        "cf_ray_id": "9ab4eae069a21ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dnssec",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dnssec",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "List DNS Records",
+        "result": "success",
+        "time": "2025-12-09T13:40:59.594Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-084a-7de4-8970-0b0e5ada85fc",
+      "raw": {
+        "cf_ray_id": "9ab4eae0698f1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/dns_records?per_page=50",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Zone Details",
+        "result": "success",
+        "time": "2025-12-09T13:40:57.651Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0358-00c0-79a3-b2ca-ffbf684add0b",
+      "raw": {
+        "cf_ray_id": "9ab4ead45a841ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "product": "zones",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get all zone settings",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.644Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fcd4-7fea-aaef-61c7c1b89904",
+      "raw": {
+        "cf_ray_id": "9ab4eace0bc91ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Bot Management Config",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.628Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fcd4-7889-81f5-c2503a6ed6b9",
+      "raw": {
+        "cf_ray_id": "9ab4eacddb931ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/bot_management",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "bot_management",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Cloudflare Speed Brain setting",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.624Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fccd-7a1d-981d-8d01c689e848",
+      "raw": {
+        "cf_ray_id": "9ab4eacddb841ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/speed_brain",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "speed_brain"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.624Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fcc9-765c-8f60-11e48500ca55",
+      "raw": {
+        "cf_ray_id": "9ab4eacddb861ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/image_resizing",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "image_resizing",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get zone setting",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.627Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fcc9-74a4-abec-169d35d4a4fb",
+      "raw": {
+        "cf_ray_id": "9ab4eacddb8f1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/h2_prioritization",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "id": "h2_prioritization",
+        "product": "settings",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Zone Hold",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.628Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fcc6-7a83-9fec-451f027c111d",
+      "raw": {
+        "cf_ray_id": "9ab4eacddb961ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/hold",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "hold",
+        "scope": "zones"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Get Origin Max HTTP Version Setting",
+        "result": "success",
+        "time": "2025-12-09T13:40:56.625Z",
+        "type": "view"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "8275b7986d9ef803e383326992a5324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0357-fcc6-7704-aad1-aa56eb9a2656",
+      "raw": {
+        "cf_ray_id": "9ab4eacddb8b1ae9",
+        "method": "GET",
+        "status_code": 200,
+        "uri": "/zones/a26c995957378704b3be32f4a892fce1/settings/origin_max_http_version",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "settings",
+        "scope": "zones",
+        "type": "origin_max_http_version"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    }
+  ],
+  "result_info": {
+    "count": 100,
+    "cursor": "4oGV6I9CzOQGaHHAmegSIvCHTFlgNf1S54YvvoGNlP4Af4Jk6aKd0b-lE2ojVt1-Hn3xkKKYySlAyPn-yCGV3wS8ukA486Fy-F6v9vBweTrD-mDTe6T8po0xwTQ="
+  },
+  "success": true
+}
