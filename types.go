@@ -63,12 +63,17 @@ type AccountAuditLogsResourceDNSResponse struct {
 	Content string   `json:"content"`
 	Proxied bool     `json:"proxied"`
 }	
+type AccountAuditLogsResourceBatchDNSResponse struct {
+	Patches []AccountAuditLogsResourceDNSResponse `json:"patches"`
+	Deletes []AccountAuditLogsResourceDNSResponse `json:"deletes"`
+}
 type AccountAuditLogsResource struct {
 	ID       string          `json:"id"`
 	Product  string          `json:"product"`
 	Request  json.RawMessage `json:"request"`
 	Response json.RawMessage `json:"response"`
         Scope    string          `json:"scope"`
+	Type     string          `json:"type"`
 }
 type AccountAuditLogsZone struct {
 	ID   string `json:"id"`

@@ -1,0 +1,141 @@
+{
+  "errors": [],
+  "result": [
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Batch DNS Records",
+        "result": "success",
+        "time": "2025-12-11T14:37:09.36Z",
+        "type": "create"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "875b986d79fe3e20383326992a85324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0dd8-2bc2-7c0a-919a-43e8bbc3ad0c",
+      "raw": {
+        "cf_ray_id": "9ac5b7e57eafbe17",
+        "method": "POST",
+        "status_code": 200,
+        "uri": "/zones/a26c909595737874b3be32f4a892fce1/dns_records/batch",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "request": {
+          "patches": [
+            {
+              "proxied": false
+            },
+            {
+              "proxied": false
+            }
+          ]
+        },
+        "response": {
+          "patches": [
+            {
+              "id": "683611a207138353fdc5fe81eb335b2f",
+              "name": "test.example.com",
+              "tags": [],
+              "type": "TXT",
+              "content": "\"a record\"",
+              "proxied": false
+            },
+            {
+              "id": "67228b87c6f4d0a85edbc924424840e0",
+              "name": "test.example.com",
+              "tags": [],
+              "type": "TXT",
+              "content": "\"another record\"",
+              "proxied": false
+            }
+          ]
+        },
+        "scope": "zones",
+        "type": "batch"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    },
+    {
+      "account": {
+        "id": "8861c88e3aef72b6c30cc6b2c26c5106",
+        "name": "Example Organization"
+      },
+      "action": {
+        "description": "Batch DNS Records",
+        "result": "success",
+        "time": "2025-12-11T11:08:03.179Z",
+        "type": "create"
+      },
+      "actor": {
+        "context": "dash",
+        "email": "user@example.com",
+        "id": "875b986d79fe3e20383326992a85324f",
+        "ip_address": "1.1.1.1",
+        "type": "user"
+      },
+      "id": "019b0d18-baeb-71ee-991e-8e9aa739d5fb",
+      "raw": {
+        "cf_ray_id": "9ac48597ca830562",
+        "method": "POST",
+        "status_code": 200,
+        "uri": "/zones/a26c909595737874b3be32f4a892fce1/dns_records/batch",
+        "user_agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:145.0) Gecko/20100101 Firefox/145.0"
+      },
+      "resource": {
+        "product": "dns_records",
+        "request": {
+          "deletes": [
+            {
+              "id": "683611a207138353fdc5fe81eb335b2f"
+            },
+            {
+              "id": "67228b87c6f4d0a85edbc924424840e0"
+            }
+          ]
+        },
+        "response": {
+          "deletes": [
+            {
+              "id": "683611a207138353fdc5fe81eb335b2f",
+              "name": "test.example.com",
+              "tags": [],
+              "type": "TXT",
+              "content": "\"a record\"",
+              "proxied": false
+            },
+            {
+              "id": "67228b87c6f4d0a85edbc924424840e0",
+              "name": "test.example.com",
+              "tags": [],
+              "type": "TXT",
+              "content": "\"another record\"",
+              "proxied": false
+            }
+          ]
+        },
+        "scope": "zones",
+        "type": "batch"
+      },
+      "zone": {
+        "id": "a26c995957378704b3be32f4a892fce1",
+        "name": "example.com"
+      }
+    }
+  ],
+  "result_info": {
+    "count": 2
+  },
+  "success": true
+}
