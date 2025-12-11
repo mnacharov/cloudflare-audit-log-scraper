@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"time"
@@ -84,8 +85,18 @@ func getAuditLogs(apiKey, orgId, slackWebhook string, zones []string) error {
 	if err != nil {
 		return err
 	}
+	defer res.Body.Close()
+	bodyBytes, err := io.ReadAll(res.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if res.StatusCode == http.StatusOK {
+		log.Println(string(bodyBytes))
+	} else {
+		return fmt.Errorf("HTTP%d: %s", res.StatusCode, string(bodyBytes))
+	}
 	var auditLogs AccountAuditLogs
-	err = json.NewDecoder(res.Body).Decode(&auditLogs)
+	err = json.Unmarshal(bodyBytes, &auditLogs)
 	if err != nil {
 		return err
 	}
@@ -120,8 +131,37 @@ func processAuditLog(auditLog AccountAuditLogsResult, slackWebhook string) error
 	if auditLog.Resource.Product != "dns_records" {
 		return fmt.Errorf("Not supported audit record product %s", auditLog.Resource.Product)
 	}
+	if auditLog.Resource.Type == "batch" {
+		var responseBatch AccountAuditLogsResourceBatchDNSResponse
+		if err := json.Unmarshal(auditLog.Resource.Response, &responseBatch); err != nil {
+			return err
+		}
+		var errs []error
+		for _, response := range responseBatch.Patches {
+			auditLog.Action.Description = "Batch DNS Records -- Update"
+			if err := processAuditLogResponse(response, auditLog, slackWebhook); err != nil {
+				errs = append(errs, err)
+			}
+		}
+		for _, response := range responseBatch.Deletes {
+			auditLog.Action.Description = "Batch DNS Records -- Delete"
+			if err := processAuditLogResponse(response, auditLog, slackWebhook); err != nil {
+				errs = append(errs, err)
+			}
+		}
+		if len(errs) > 0 {
+			return fmt.Errorf("Error processing batch response audit log: %+v", errs)
+		}
+		return nil
+	}
 	var response AccountAuditLogsResourceDNSResponse
-	json.Unmarshal(auditLog.Resource.Response, &response)
+	if err := json.Unmarshal(auditLog.Resource.Response, &response); err != nil {
+		return err
+	}
+	return processAuditLogResponse(response, auditLog, slackWebhook)
+}
+
+func processAuditLogResponse(response AccountAuditLogsResourceDNSResponse, auditLog AccountAuditLogsResult, slackWebhook string) error {
 	if response.ID == "" {
 		// cloudflare can return empty response for recently created records
 		return fmt.Errorf("Invalid response: %v", auditLog.Resource.Response)
