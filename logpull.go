@@ -104,12 +104,12 @@ func getAuditLogs(apiKey, orgId, slackWebhook string, zones []string) error {
 		return fmt.Errorf("ERROR: %+v\n", auditLogs)
 	}
 	for _, err := range auditLogs.Errors {
-		log.Printf("ERROR: %s\n", err.Error())
+		log.Printf("ERROR: %s", err.Error())
 	}
 	for _, auditLog := range auditLogs.Result {
 		err = processAuditLog(auditLog, slackWebhook)
 		if err != nil {
-			log.Printf("ERROR: %s\n", err)
+			log.Printf("ERROR: %s", err)
 			logsProcessedErrors.Inc()
 			continue
 		} else {
